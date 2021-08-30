@@ -14,5 +14,6 @@
 
   :global(:root) {
     background-color: rgb(20, 20, 20);
+    color: white;
   }
 </style>
