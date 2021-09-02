@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Arlan Crypto Webshop",
+    "imagefolder": "arlan",
+    "course": "@work-2",
+    "synopsis": "Make a webshop that offer products from different productcategories. Use Node.js, Express, Passport, SQLite, Jest,...",
+    "for": "Arteveldehogeschool",
+    "images": [
+      "homepage",
+      "product"
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Passport.js",
+      "Express.js",
+      "SQLite3",
+      "Jest"
+    ],
+    "status": "finished",
+    "github": null,
+    "deploy": null
+  },
+  {
+    "name": "Watchbase React App",
+    "imagefolder": "watchbase",
+    "course": "programming-4",
+    "synopsis": "Make a Movie application where you offer movies and/or tv shows from different categories.",
+    "for": "Arteveldehogeschool",
+    "images": [
+      "homepage",
+      "searchpage"
+    ],
+    "tech": [
+      "React.js",
+      "SCSS",
+      "Storybook",
+      "Firestore"
+    ],
+    "status": "finished",
+    "github": null,
+    "deploy": "https://moviedb-61cb2.web.app/"
+  },
+  {
+    "name": "Spotify API",
+    "imagefolder": "spotifyapi",
+    "synopsis": "Create an API to manage songs and playlists. The API allows you to add songs as an administrator, every member can create and manage playlists.",
+    "course": "programming-3",
+    "for": "Arteveldehogeschool",
+    "images": null,
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Passport.js",
+      "Express.js",
+      "SQLite3",
+      "Jest"
+    ],
+    "status": "finished",
+    "github": "https://github.com/pgm-arthtemm/spotify-api",
+    "deploy": null
+  },
+  {
+    "name": "Developer Quiz",
+    "imagefolder": "devquiz",
+    "synopsis": "Make a mobile application for a Developer Quiz. You consume data from the QuizAPI to request questions and answers.",
+    "course": "programming-3",
+    "images": [
+      "homepage",
+      "question"
+    ],
+    "for": "Arteveldehogeschool",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "status": "finished",
+    "github": "https://github.com/pgm-arthtemm/developer-quiz",
+    "deploy": "https://pgm-arthtemm.github.io/developer-quiz/"
+  },
+  {
+    "name": "Developer Quiz Svelte",
+    "imagefolder": "devquizsvelte",
+    "synopsis": "Remake of Developer Quiz in Svelte",
+    "course": "programming-3",
+    "images": [
+      "homepage",
+      "settings"
+    ],
+    "for": "Arteveldehogeschool",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Svelte"
+    ],
+    "status": "in development",
+    "github": "https://github.com/pgm-arthtemm/devquiz-svelte",
+    "deploy": null
+  }
+]
