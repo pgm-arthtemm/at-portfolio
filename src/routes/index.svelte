@@ -1,8 +1,9 @@
-<script lang="typescript">
+<script>
+  import Hero from '../components/home/Hero.svelte';
 </script>
 
 <svelte:head>
-  <title>Arthur Temmerman</title>
+  <title>AT Portfolio | Home</title>
 </svelte:head>
 
-<h1>HOME</h1>
+<Hero />
