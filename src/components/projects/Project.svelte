@@ -6,10 +6,6 @@
   let showInfo = false
 </script>
 
-<svelte:head>
-  <title>Arthur Temmerman | Projects</title>
-</svelte:head>
-
 <li class="project mt-8 mb-24">
   <div class="project--heading mb-4">
     <h2 class="mb-4 block transition-all duration-350 ease-in-out text-8xl font-bold hover:cursor-pointer hover:ml-8" on:click={() => (showInfo = !showInfo)}>{project.name}</h2>
