@@ -1,10 +1,10 @@
 <script lang="typescript">
   import { onMount } from 'svelte';
 
-  let wait = 3000;
-  const words = ["Front End Developer", "Designer", "Full Stack JS Developer"];
+  let wait:number = 3000;
+  const words: string[] = ["Front End Developer", "Designer", "Full Stack JS Developer"];
 
-  const TypeWriter = function(txtElement, words, wait = 3000) {
+  const TypeWriter = function(txtElement: any, words: string[], wait: number = 3000) {
     this.txtElement = txtElement;
     this.words = words,
     this.txt = '';
@@ -26,7 +26,7 @@
 
     this.txtElement.innerHTML = `<span class="border-r-4 border-red-700">${this.txt}</span>`;
 
-    let typeSpeed = 150;
+    let typeSpeed: number = 150;
 
     if (this.isDeleting) {
       typeSpeed /= 2;
