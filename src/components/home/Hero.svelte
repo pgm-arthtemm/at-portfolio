@@ -3,13 +3,17 @@
   import { gsap } from "gsap";
   import Typewriter from "./Typewriter.svelte";
 
+  // Lower start = faster
   let start = 0;
+  let wordArray = ["H", "e", "l", "l", "o", "!"];
 
   onMount(() => {
     gsap.to(".first", {top: "-200%", duration: 2, delay: start})
     gsap.to(".second", {top: "-200%", duration: 2, delay: start + 0.2})
     gsap.to(".third", {top: "-200%", duration: 2, delay: start + 0.4})
     gsap.to(".text", {y: '0%', duration: 1})
+    gsap.from(".hello", {x: "-100%", duration: 1 , delay: start + 1})
+    gsap.from(".info", {y: "100vh", duration: 1.5, delay: start + 1.2})
   })
 </script>
 <div class="overlays">
@@ -28,17 +32,27 @@
 </div>
 
 <div class="hero text-6xl leading-snug font-bold">
-
   <div class="hidetext">
-    <h2 class="text-9xl">Hello<span class="text-red-700">!</span></h2>
-    <h2>My name is</h2>
-    <h2>Arthur <span class="text-red-700">Temmerman</span></h2>
-    <Typewriter />
+    <h2 class="hello text-9xl">
+        {#each wordArray as letter, index}
+          {#if index === 5}
+          <span class="text-red-700">{letter}</span>
+          {:else}
+          <span>{letter}</span>
+          {/if}  
+        {/each}
+    </h2>
+    <div class="info">
+      <h2>My name is</h2>
+      <h2>Arthur <span class="text-red-700">Temmerman</span></h2>
+      <Typewriter />
+    </div>
   </div>
 </div>
 
 <style>
   .hero {
+    overflow: hidden;
     position: absolute;
     width: 70%;
     top: 50%;

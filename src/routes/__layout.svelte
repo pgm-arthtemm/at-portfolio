@@ -13,7 +13,7 @@
   @tailwind utilities;
 
   :global(:root) {
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
     color: white;
   }
 </style>

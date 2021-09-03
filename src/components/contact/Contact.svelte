@@ -24,6 +24,8 @@
 
   <label for="message">Your message</label>
   <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+  <button>Submit</button>
 </form>
 
 <style>
