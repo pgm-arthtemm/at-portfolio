@@ -42,7 +42,7 @@
       <ul class="md:flex justify-between">
         {#each project.images as image}
           <li class="w-full m-auto mb-12 md:w-1/2 md:mb-0">
-            <img class="w-full md:w-11/12" src="./data/images/projects/{project.imagefolder}/{image}.jpg" alt={project.image}>
+            <img class="w-full md:w-11/12" src="/data/{project.imagefolder}-{image}.jpg" alt={project.image}>
           </li>
         {/each}
       </ul>
