@@ -4,19 +4,33 @@
   import Typewriter from "./Typewriter.svelte";
 
   // Lower start = faster
-  let start = 0;
+  let start = 1.5;
   let wordArray = ["H", "e", "l", "l", "o", "!"];
 
   onMount(() => {
-    gsap.to(".first", {top: "-200%", duration: 2, delay: start})
-    gsap.to(".second", {top: "-200%", duration: 2, delay: start + 0.2})
-    gsap.to(".third", {top: "-200%", duration: 2, delay: start + 0.4})
+    gsap.to(".first", {top: "-100%", duration: 1, delay: start})
+    gsap.to(".second", {top: "-100%", duration: 1, delay: start + 0.2})
+    gsap.to(".third", {top: "-100%", duration: 1, delay: start + 0.4})
+    gsap.to(".mobile-intro", {left: "-100%", duration: 1, delay: start})
     gsap.to(".text", {y: '0%', duration: 1})
+    gsap.to(".mobile-text", {y: '0%', duration: 1})
     gsap.from(".hello", {x: "-100%", duration: 1 , delay: start + 1})
     gsap.from(".info", {y: "100vh", duration: 1.5, delay: start + 1.2})
   })
 </script>
-<div class="overlays">
+<div class="mobile--overlay md:hidden">
+  <div class="mobile-intro absolute bg-red-700 w-screen h-screen z-50 overflow-hidden top-0 left-0">
+    <div class="intro-text">
+      <h1 class="hide overflow-hidden">
+        <span class="mobile-text">Arthur Temmerman</span>
+      </h1>
+      <h1 class="hide overflow-hidden">
+        <span class="mobile-text text-black">Portfolio</span>
+      </h1>
+    </div>
+  </div>
+</div>
+<div class="overlays hidden md:block">
   <div class="first"></div>
   <div class="second text-center">
     <div class="intro">
@@ -88,5 +102,18 @@
   .intro .hide span {
     transform: translateY(100%);
     display: inline-block;
+  }
+  .mobile-intro .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+  .intro-text {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-align: center;
   }
 </style>
