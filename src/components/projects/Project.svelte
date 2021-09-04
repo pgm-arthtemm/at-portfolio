@@ -8,15 +8,15 @@
 
 <li class="project mt-8 mb-24">
   <div class="project--heading mb-4">
-    <h2 class="mb-4 block transition-all duration-350 ease-in-out text-8xl font-bold hover:cursor-pointer hover:ml-8" on:click={() => (showInfo = !showInfo)}>{project.name}</h2>
+    <h2 class="mb-4 block transition-all duration-350 ease-in-out text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold hover:cursor-pointer hover:ml-8" on:click={() => (showInfo = !showInfo)}>{project.name}</h2>
     <h3 class="text-red-700 text-2xl">Project for {project.for}, course {project.course}</h3>
   </div>
   <div class="show {showInfo} text-2xl">
     <p class="mb-4">{project.synopsis}</p>
     <h3 class="text-red-700 mb-4">Technologies used:</h3>
-    <ul class="flex mb-4">
+    <ul class="flex flex-wrap md:flex-auto sm:w-full">
       {#each project.tech as tech}
-        <li class="pr-8 text-gray-400">{tech}</li>
+        <li class="pb-4 md:pb-0 md:pt-0 pr-8 text-gray-400">{tech}</li>
       {/each}
     </ul>
     <h3 class="status text-2xl mb-4">
@@ -39,10 +39,10 @@
       {/if}
     </div>
     {#if project.images !== null}
-      <ul class="flex">
+      <ul class="md:flex justify-between">
         {#each project.images as image}
-          <li class="w-1/2">
-            <img class="w-11/12" src="data/images/projects/{project.imagefolder}/{image}.jpg" alt={project.image}>
+          <li class="w-full m-auto mb-12 md:w-1/2 md:mb-0">
+            <img class="w-full md:w-11/12" src="data/images/projects/{project.imagefolder}/{image}.jpg" alt={project.image}>
           </li>
         {/each}
       </ul>

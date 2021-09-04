@@ -57,5 +57,5 @@
 </script>
 
 <div class="flex flex-col content-center h-full">
-  <span class="txt-type text-red-700"></span>
+  <span class="txt-type text-red-700 text-4xl md:text-5xl lg:text-6xl pb-4"></span>
 </div>

@@ -11,9 +11,9 @@
   });
 </script>
 
-<div class="projects">
+<div class="m-auto w-11/12 md:container pt-10">
   {#if data !== null}
-    <ul class="project--list">
+    <ul>
       {#each data as project}
         <Project {project} />
       {/each}

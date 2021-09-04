@@ -5,7 +5,7 @@
   import Typewriter from "./Typewriter.svelte";
 
   // Lower start = faster
-  let start = 0;
+  let start = 1.5;
   let wordArray = ["H", "e", "l", "l", "o", "!"];
 
   onMount(() => {
@@ -49,7 +49,7 @@
 
 <div class="hero w-11/12 md:w-9/12 text-6xl leading-snug font-bold">
   <div class="hidetext">
-    <h2 class="hello text-9xl">
+    <h2 class="hello text-center text-7xl md:text-8xl md:text-left lg:text-9xl">
         {#each wordArray as letter, index}
           {#if index === 5}
           <span class="text-red-700 transition duration-300 ease-in-out hover:text-white cursor-pointer">{letter}</span>
@@ -58,9 +58,9 @@
           {/if}  
         {/each}
     </h2>
-    <div class="info">
-      <h2>My name is</h2>
-      <h2>Arthur <span class="text-red-700">Temmerman</span></h2>
+    <div class="info text-center md:text-left">
+      <h2 class="text-4xl mt-16 md:mt-4 md:text-5xl xl:text-6xl mb-6">My name is</h2>
+      <h2 class="text-4xl md:text-5xl xl:text-6xl mb-6">Arthur <span class="text-red-700 text-4xl md:text-5xl xl:text-6xl mb-6">Temmerman</span></h2>
       <Typewriter />
     </div>
   </div>
