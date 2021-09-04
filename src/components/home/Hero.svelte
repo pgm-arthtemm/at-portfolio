@@ -1,10 +1,11 @@
 <script>
   import { onMount } from "svelte";
   import { gsap } from "gsap";
+
   import Typewriter from "./Typewriter.svelte";
 
   // Lower start = faster
-  let start = 1.5;
+  let start = 0;
   let wordArray = ["H", "e", "l", "l", "o", "!"];
 
   onMount(() => {
@@ -18,6 +19,7 @@
     gsap.from(".info", {y: "100vh", duration: 1.5, delay: start + 1.2})
   })
 </script>
+
 <div class="mobile--overlay md:hidden">
   <div class="mobile-intro absolute bg-red-700 w-screen h-screen z-50 overflow-hidden top-0 left-0">
     <div class="intro-text">
@@ -35,24 +37,24 @@
   <div class="second text-center">
     <div class="intro">
       <h1 class="hide bg-red-700 overflow-hidden">
-        <span class="text">Arthur Temmerman</span>
+        <span class="text text-4xl xl:text-5xl">Arthur Temmerman</span>
       </h1>
       <h1 class="hide bg-red-700 overflow-hidden">
-        <span class="text text-black">Portfolio</span>
+        <span class="text text-4xl xl:text-5xl text-black">Portfolio</span>
       </h1>
     </div>
   </div>
   <div class="third"></div>
 </div>
 
-<div class="hero text-6xl leading-snug font-bold">
+<div class="hero w-11/12 md:w-9/12 text-6xl leading-snug font-bold">
   <div class="hidetext">
     <h2 class="hello text-9xl">
         {#each wordArray as letter, index}
           {#if index === 5}
-          <span class="text-red-700">{letter}</span>
+          <span class="text-red-700 transition duration-300 ease-in-out hover:text-white cursor-pointer">{letter}</span>
           {:else}
-          <span>{letter}</span>
+          <span class="transition duration-300 ease-in-out hover:text-red-700 cursor-pointer">{letter}</span>
           {/if}  
         {/each}
     </h2>
@@ -68,7 +70,6 @@
   .hero {
     overflow: hidden;
     position: absolute;
-    width: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -97,7 +98,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
   }
   .intro .hide span {
     transform: translateY(100%);
