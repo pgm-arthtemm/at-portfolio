@@ -16,11 +16,11 @@
 </script>
 
 <nav class="overflow-hidden">
-  <div on:click={toggleMenu} class:hidden={menuOpen} class="icon w-10 h-10 absolute top-7 right-7 cursor-pointer">
+  <div on:click={toggleMenu} class:hidden={menuOpen} class="icon w-10 h-10 absolute top-4 right-4 cursor-pointer">
     <MdMenu />
   </div>
   <div class="hamburger--menu w-screen h-screen absolute bg-black z-50">
-    <div on:click={toggleMenu} class:hidden={!menuOpen} class="icon w-10 h-10 absolute top-7 right-7 cursor-pointer">
+    <div on:click={toggleMenu} class:hidden={!menuOpen} class="icon w-10 h-10 absolute top-4 right-4 cursor-pointer">
       <MdClose />
     </div>
     <ul class="mt-7 ml-12">
