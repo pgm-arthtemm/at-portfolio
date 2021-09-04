@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
 
   let wait = 3000;
-  const words = ["Front End Developer", "Designer", "Full Stack JS Developer"];
+  const words = ["Front End Developer", "Designer", "Full Stack JS Dev"];
 
   const TypeWriter = function(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
