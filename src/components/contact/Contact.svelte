@@ -16,8 +16,8 @@
         method: "post",
         body: data,
       });
-      gsap.to(".circle", {y: "50vh", duration: .5})
-      gsap.to(".circle", {y: "-50vh", duration: 2, delay: 2})
+      gsap.to(".circle", {y: "80vh", duration: .5})
+      gsap.to(".circle", {y: "-80vh", duration: 2, delay: 2})
       name = email = message = '';
     });
   });
@@ -43,7 +43,7 @@
     
     <div class="w-full mb-4 lg:mb-8">
       <label class="block font-bold text-2xl mb-1" for="message">Your <span class="text-red-700">message:</span></label>
-      <textarea bind:value={message} class="w-10/12 rounded-md max-h-52 min-h-52 pl-2 pt-2" name="message" required id="message" cols="30" rows="10"></textarea>
+      <textarea bind:value={message} class="max-h-28 min-h-28 w-10/12 rounded-md md:max-h-52 md:min-h-52 pl-2 pt-2" name="message" required id="message" cols="30" rows="10"></textarea>
     </div>
     
     <button class="bg-red-700 m-auto hover:bg-red-500 text-white text-2xl mt-2 font-bold py-2 px-4 border-b-4 border-red-800 hover:border-red-500 rounded">
@@ -65,7 +65,7 @@
     height: 10rem;
     border-radius: 50%;
     background: green;
-    top: -10%;
+    top: -40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
