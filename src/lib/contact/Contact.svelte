@@ -16,16 +16,12 @@
         method: "post",
         body: data,
       });
-      gsap.to(".circle", {y: "80vh", duration: .5})
-      gsap.to(".circle", {y: "-80vh", duration: 2, delay: 2})
-      name = email = message = '';
-    });
-  });
-  const testing = () => {
       gsap.to(".circle", {y: "80vh", duration: .5, rotation: 360})
       gsap.to(".circle", {y: "-80vh", duration: 2, delay: 2})
       gsap.to(".circle", {rotation: -360, delay: 2.5})
-    }
+      name = email = message = '';
+    });
+  });
 </script>
 
 <div class="contact pt-16 m-auto w-11/12 md:w-7/12 text-center">
@@ -51,7 +47,7 @@
       <textarea bind:value={message} class="max-h-28 min-h-28 w-10/12 rounded-md md:max-h-52 md:min-h-52 pl-2 pt-2" name="message" required id="message" cols="30" rows="10"></textarea>
     </div>
     
-    <button on:click={testing} class="bg-red-700 m-auto hover:bg-red-500 text-white text-2xl mt-2 font-bold py-2 px-4 border-b-4 border-red-800 hover:border-red-500 rounded">
+    <button class="bg-red-700 m-auto hover:bg-red-500 text-white text-2xl mt-2 font-bold py-2 px-4 border-b-4 border-red-800 hover:border-red-500 rounded">
       Send message
     </button>
   </form>

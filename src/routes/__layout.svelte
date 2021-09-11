@@ -1,6 +1,6 @@
 <script>
-  import Nav from '../components/layout/Nav.svelte';
-  import MobileNav from '../components/layout/MobileNav.svelte';
+  import Nav from '$lib/layout/Nav.svelte';
+  import MobileNav from '$lib/layout/MobileNav.svelte';
 </script>
 
 <div class="block md:hidden">

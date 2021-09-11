@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { gsap } from "gsap";
 
-  import Typewriter from "./Typewriter.svelte";
+  import TypeWriter from './Typewriter.svelte';
 
   // Lower start = faster
   let start = 1.5;

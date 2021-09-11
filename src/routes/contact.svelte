@@ -1,5 +1,5 @@
 <script>
-  import Contact from '../components/contact/Contact.svelte';
+  import Contact from "$lib/contact/Contact.svelte";
 </script>
 
 <svelte:head>

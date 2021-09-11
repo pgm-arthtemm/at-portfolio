@@ -1,5 +1,5 @@
 <script>
-  import ProjectList from "../components/projects/ProjectList.svelte";
+  import ProjectList from "$lib/projects/ProjectList.svelte";
 </script>
 
 <svelte:head>
