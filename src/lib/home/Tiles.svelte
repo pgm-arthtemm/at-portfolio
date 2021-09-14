@@ -1,7 +1,5 @@
 <script>
 	let techArray = ['Svelte', 'Tailwind', 'ReactJS', 'Sass', 'Bootstrap', 'GSAP'];
-
-	setTimeout(() => {}, 5000);
 </script>
 
 <div class="tech">
@@ -11,7 +9,7 @@
 	<ul class="flex-container">
 		{#each techArray as item}
 			<li class="w-1/4 m-2 pt-8">
-				<img class="m-auto w-16" src={`/icons/${item}.png`} alt={item} />
+				<img class="m-auto w-16" src={`/${item}.png`} alt={item} />
 				<h4 class="text-lg xl:text-2xl xl:mt-2 text-center transition duration-300 ease-in-out">
 					{item}
 				</h4>

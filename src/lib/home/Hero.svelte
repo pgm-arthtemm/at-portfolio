@@ -5,8 +5,7 @@
 	import Typewriter from './Typewriter.svelte';
 	import Tiles from './Tiles.svelte';
 
-	// Lower start = faster
-	let start = 0;
+	let start = 1.5;
 	let wordArray = ['H', 'e', 'l', 'l', 'o', '!'];
 
 	onMount(() => {
