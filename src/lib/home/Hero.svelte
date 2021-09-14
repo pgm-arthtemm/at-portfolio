@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { gsap } from "gsap";
 
-  import TypeWriter from './Typewriter.svelte';
+  import Typewriter from './Typewriter.svelte';
 
   // Lower start = faster
   let start = 1.5;
@@ -59,11 +59,12 @@
         {/each}
     </h2>
     <div class="info text-center md:text-left">
-      <h2 class="text-4xl mt-16 md:mt-4 md:text-5xl xl:text-6xl mb-6">My name is</h2>
-      <h2 class="text-4xl md:text-5xl xl:text-6xl mb-6">Arthur <span class="text-red-700 text-4xl md:text-5xl xl:text-6xl mb-6">Temmerman</span></h2>
+      <h2 class="text-3xl mt-12 md:mt-4 md:text-5xl xl:text-6xl mb-6">My name is</h2>
+      <h2 class="text-3xl md:text-5xl xl:text-6xl mb-6">Arthur <span class="text-red-700 text-3xl md:text-5xl xl:text-6xl mb-6">Temmerman</span></h2>
       <Typewriter />
     </div>
   </div>
+  .
 </div>
 
 <style>
