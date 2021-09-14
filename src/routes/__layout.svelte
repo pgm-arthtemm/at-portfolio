@@ -1,27 +1,28 @@
 <script>
-  import Nav from '$lib/layout/Nav.svelte';
-  import MobileNav from '$lib/layout/MobileNav.svelte';
+	import Nav from '$lib/layout/Nav.svelte';
+	import MobileNav from '$lib/layout/MobileNav.svelte';
 </script>
 
 <div class="block md:hidden">
-  <MobileNav />
+	<MobileNav />
 </div>
 
 <div class="hidden md:block">
-  <Nav />
+	<Nav />
 </div>
 
 <div class="container m-auto">
-  <slot />
+	<slot />
 </div>
 
 <style>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
 
-  :global(:root) {
-    background-color: #141414;
-    color: white;
-  }
+	:global(:root) {
+		background-color: #141414;
+		color: white;
+		max-width: 150rem;
+	}
 </style>
