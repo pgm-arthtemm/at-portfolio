@@ -14,7 +14,7 @@
   <div class="show {showInfo} text-2xl">
     <p class="mb-4">{project.synopsis}</p>
     <h3 class="text-red-700 mb-4">Technologies used:</h3>
-    <ul class="flex flex-wrap md:flex-auto sm:w-full">
+    <ul class="flex flex-wrap md:flex-auto sm:w-full md:mb-4">
       {#each project.tech as tech}
         <li class="pb-4 md:pb-0 md:pt-0 pr-8 text-gray-400">{tech}</li>
       {/each}

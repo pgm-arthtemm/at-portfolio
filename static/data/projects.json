@@ -3,7 +3,7 @@
     "name": "Arlan Crypto Webshop",
     "imagefolder": "arlan",
     "course": "@work-2",
-    "synopsis": "Make a webshop that offer products from different productcategories. Use Node.js, Express, Passport, SQLite, Jest,...",
+    "synopsis": "Make a webshop that offers products from different productcategories. Use Node.js, Express, Passport, SQLite, Jest,...",
     "for": "Arteveldehogeschool",
     "images": [
       "homepage",
@@ -19,7 +19,7 @@
       "Jest"
     ],
     "status": "finished",
-    "github": null,
+    "github": "https://github.com/pgmgent-pgm-4/webshop-arlan",
     "deploy": null
   },
   {

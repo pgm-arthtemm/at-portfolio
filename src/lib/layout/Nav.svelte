@@ -12,7 +12,6 @@
     <div>
       <ul class="flex items-center">
         <li class="transition duration-100 ease-in font-bold text-2xl ml-12 hover:text-red-700"><a sveltekit:prefetch href="/projects">Projects</a></li>
-        <li class="transition duration-100 ease-in font-bold text-2xl ml-12 hover:text-red-700"><a sveltekit:prefetch href="/info">Info</a></li>
         <li class="transition duration-100 ease-in font-bold text-2xl ml-12 hover:text-red-700"><a sveltekit:prefetch href="/contact">Contact</a></li>
       </ul>
     </div>
