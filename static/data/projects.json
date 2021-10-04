@@ -3,7 +3,7 @@
     "name": "Arlan Crypto Webshop",
     "imagefolder": "arlan",
     "course": "@work-2",
-    "synopsis": "Make a webshop that offers products from different productcategories. Use Node.js, Express, Passport, SQLite, Jest,... This project was made in collabaration with Dylan Cathelijn",
+    "synopsis": "Make a webshop that offers products from different productcategories. Use Node.js, Express, Passport, SQLite, Jest,... This project was made in collaboration with Dylan Cathelijn",
     "for": "Arteveldehogeschool",
     "images": [
       "homepage",
